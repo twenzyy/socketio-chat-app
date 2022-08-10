@@ -9,7 +9,7 @@ app.use(express.static('src'))
 const io = socket(server)
 
 io.on('connection', (socket) => {
-    console.log(socket.id)
+    console.log('yeni bağlantı: ' + socket.id)
 
     socket.on('chat', data => {
         io.sockets.emit('chat', data)
