@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat System</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js" integrity="sha512-9mpsATI0KClwt+xVZfbcf2lJ8IFBAwsubJ6mI3rtULwyM3fBmQFzj0It4tGqxLOGQwGfJdk/G+fANnxfq9/cew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+            <ul id="output"></ul>
+            <div id="feedback"></div>
+        <form id="form" action="">
+            <input type="text" id="sender" placeholder="Kullanıcı Adı">
+            <input type="text" id="message" placeholder="Mesaj">
+            <button>Gönder</button>
+        </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js" charset="utf-8"></script>
+
+</body>
+</html>
