@@ -1,4 +1,4 @@
-const socket = io.connect('url')
+const socket = io.connect('http://localhost:90')
 
 const sender = document.getElementById('sender')
 const message = document.getElementById('message')
